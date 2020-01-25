@@ -1,0 +1,51 @@
+/*Fonts*/
+
+@import url("https://fonts.googleapis.com/css?family=Patua+One&display=swap");
+
+/*Globals*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 960px;
+}
+
+
+/*Colors*/
+
+$black: #000;
+$white: #fff;
+$search-color: #f4f4f4;
+$primary-color: #316099;
+$secondary-color: #1f3f68;
+
+
+/*url*/
+
+$url-banner: url("../img/banner.png");
+
+/*Footer article*/
+@import "footer_article"

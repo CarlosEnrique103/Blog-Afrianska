@@ -1,0 +1,144 @@
+footer {
+    width: 95%;
+    border-radius: 0 200px 0 0;
+    background: rgb(117, 127, 133);
+    background: linear-gradient(
+        52deg,
+        rgba(117, 127, 133, 1) 0%,
+        rgba(49, 96, 120, 1) 15%,
+        rgba(28, 120, 167, 1) 100%
+    );
+    padding-bottom: 20px;
+    .footer-about {
+        display: flex;
+        width: 90%;
+        border-radius: 0 200px 0 0;
+        justify-content: space-between;
+        color: #fff;
+        padding: 100px 10px;
+        height: 350px;
+        align-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        .footer-about-text {
+            width: 40%;
+            margin-left: 50px;
+
+            h3 {
+                font-size: 2rem;
+                font-weight: normal;
+                line-height: 1.2;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+
+            p {
+                font-weight: normal;
+                line-height: 1.2;
+                opacity: 0.8;
+            }  
+            
+        }
+
+        .btn-footer-about {
+            display: block;
+            background-color: $primary-color;
+            border-radius: 10px;
+            width: 250px;
+            height: 56px;
+            color: #fff;
+            border-style: none;
+            font-size: 1rem;
+            margin-right: 120px;
+            
+            &:hover{
+                border: 3px solid $secondary-color;
+                background-color: $white;
+                color: $secondary-color
+            }
+        }
+
+
+
+    
+
+    }
+
+    .footer-information{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 40px;
+        margin: 50px 120px 50px 50px;
+        color: #fff;
+        padding: 50px 0;
+        h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        li {
+            font-size: 1rem;
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        .address {
+
+            .address-information{
+                p {
+                    margin-bottom: 10px;
+                }
+                i {
+                    margin-right: 10px;
+                }
+            } 
+            .title-address {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                h3 {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .about {
+            h3 {
+                padding-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+
+        .follow {
+            h3 {
+                padding-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            i {
+                margin-right: 10px;
+            }
+
+        }
+    }
+
+    .footer-copy {
+        padding-bottom: 20px;
+        padding-left: 50px;
+
+        p{
+            color: #fff;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+    }
+}

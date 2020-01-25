@@ -1,0 +1,160 @@
+main {
+    .popular {
+        width: 75%;
+        margin: auto;
+        margin-top: 56px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid $secondary-color;
+        padding-bottom: 10px;
+
+        h2 {
+            font-size: 1.2rem;
+            color: $primary-color;
+            font-weight: bold;
+        }
+
+        .popular-principal {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            figure {
+                width: 60%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin-left: 10px;
+            }
+        }
+        .popular-text-primary {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40%;
+            padding: 10px 0;
+            h2 {
+                font-size: 2.1rem;
+                color: $secondary-color;
+            }
+            p {
+                font-size: 1.1rem;
+                line-height: 2;
+            }
+        }
+        .footer-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10px;
+            align-items: center;
+
+            .footer-article-left h3 {
+                font-size: 0.9rem;
+                color: $secondary-color;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            
+            .footer-article-right time {
+                font-size: 0.9rem;
+                color: $black;
+                margin-bottom: 5px;
+            }
+
+            .footer-article-right span {
+                color: $secondary-color;
+                font-size: 1.5rem;
+            }
+        }
+
+        .popular-articles {
+            width: 100%;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 450px;
+            grid-column-gap: 15px;
+            .popular-articles-text {
+                display: flex;
+                height: 45%;
+                flex-direction: column;
+                align-content: space-between;
+                justify-content: space-between;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                color: $secondary-color;
+            }
+
+            p {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+        }
+
+        .footer-popular {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: $primary-color;
+        }
+    }
+
+    .all-article {
+        width: 75%;
+        margin: auto;
+        margin-top: 56px;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 1.2rem;
+            color: $primary-color;
+            font-weight: bold;
+        }
+        .all-articles-article {
+            margin: 20px 0;
+            display: flex;
+
+            h2 {
+                font-size: 1.2rem;
+                color: $secondary-color;
+            }
+            
+            p {
+                font-size: 0.8rem;
+                line-height: 2;
+            }
+            
+            .all-articles-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 10px;
+            }
+
+            .footer-all-article {
+                display: flex;
+                padding: 10px;
+                justify-content: space-between;
+                color: $primary-color;
+            }
+        }
+        
+    }
+
+    .footer-all-article {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        color: #316099;
+    }
+}

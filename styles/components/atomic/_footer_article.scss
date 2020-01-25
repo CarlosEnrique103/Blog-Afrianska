@@ -1,0 +1,24 @@
+.footer-article {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    align-items: center;
+    .footer-article-left {
+
+        time {
+            font-size: 0.9rem;
+            color: #000;
+            margin-bottom: 5px;
+    
+        }
+    }
+    .footer-article-right {
+        span {
+            color: #1f3f68;
+            font-size: 1.5rem;
+        }
+        span:last-child {
+            margin-left: 20px;
+        }
+    } 
+}
