@@ -1,6 +1,7 @@
 main {
     .popular {
-        width: 75%;
+        max-width: 960px;
+        width: 100%;
         margin: auto;
         margin-top: 56px;
         margin-bottom: 20px;
@@ -110,7 +111,8 @@ main {
     }
 
     .all-article {
-        width: 75%;
+        max-width: 960px;
+        width: 100%;
         margin: auto;
         margin-top: 56px;
         margin-bottom: 20px;
@@ -123,6 +125,13 @@ main {
         .all-articles-article {
             margin: 20px 0;
             display: flex;
+            figure {
+                width: 80%;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
 
             h2 {
                 font-size: 1.2rem;

@@ -19,11 +19,12 @@
             <header>
                 <div class="header-top">
                     <a href="index.html"><img src="img/logo.png" alt="Logo Afrianska"/></a>
-                    <ul>
+                    <ul class='nav'>
                         <li><a href="">Home</a></li>
                         <li><a href="">Espectaculo</a></li>
                         <li><a href="">Deportes</a></li>
-                    </ul>
+                    </ul cl>
+                    <span class="burgerMenu">MENÚ</span>
                 </div>
                 <div class="header-banner">
                         <div>
@@ -72,6 +73,7 @@
                         </figure>
                     </article>
                     <div class="popular-articles">
+                      
                         <article class="arcticles">
                             <figure>
                                 <img
@@ -87,7 +89,8 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Adipisci placeat aut
-                                    laborum qui nihil provident.
+                                    laborum qui nihil provident, dolore
+                                    assumenda ad enimtenetur!
                                 </p>
                                 <div class="footer-article">
                                     <div class="footer-article-left">
@@ -121,7 +124,7 @@
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Adipisci placeat aut
                                     laborum qui nihil provident, dolore
-                                    assumenda ad enimtenetur!
+                                    assumenda ad  tenetur!
                                 </p>
                                 <div class="footer-article">
                                     <div class="footer-article-left">
@@ -431,5 +434,13 @@
                 </div>
             </footer>
         </div>
+        <script type="text/javascript">
+            let btnMenu=document.querySelector('.burgerMenu');
+            let headerTop=document.querySelector('.nav');
+            btnMenu.onclick= () =>{
+                console.log('click')
+                headerTop.classList.toggle('show-menu')
+            }
+        </script>
     </body>
 </html>

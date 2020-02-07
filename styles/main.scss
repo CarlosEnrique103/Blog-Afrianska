@@ -22,3 +22,255 @@
 ***************FOOTER*********************
 *****************************************/
 @import "./components/templates/footer";
+
+
+/***MEDIAD QUERIES*****/
+
+/****TABLET****/
+
+@media(max-width:870px){
+    header {
+
+        .header-top{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+        .header-banner{
+            padding: 20px 50px;
+            div {
+                width: 80%;
+
+            }
+            h1 {
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .header-search {
+            width: 95%;
+            input {
+                font-size: 1.3rem;
+            }
+        }
+    }
+   
+    main {
+        .popular {
+            h2{
+                font-size: 1.5rem;
+            }
+            .popular-text-primary{
+                p{
+                    font-size:1.4rem;
+                }
+            }
+        }
+        .all-article {
+            .all-articles-article {
+                p{
+                    font-size:1rem;
+                }
+            }
+        }
+    }
+    footer {
+        .footer-about{
+            flex-direction: column;
+
+            .btn-footer-about{
+                margin-left:170px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+/****LARGE MOVIL****/
+
+@media(max-width:650px){
+    header {
+
+        .header-top{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+        .header-banner{
+            padding: 20px 50px;
+            div {
+                width: 80%;
+
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .header-search {
+            width: 98%;
+            input {
+                font-size: 1.3rem;
+            }
+        }
+    }
+   
+    main {
+        .popular {
+           
+            .popular-principal{
+                display: block;
+                border-bottom: 1px solid $primary-color;
+                .popular-text-primary{
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    margin: 0;
+                    width: 100%;
+                    p{
+                        font-size:1.1rem;
+
+                    }
+                    
+                }
+                figure {
+                    width: 90%;
+                    box-sizing: border-box;
+                    margin: auto;
+                }
+                img {
+                    margin: 0;
+                    height: 200px;
+                }
+                
+            }
+            .popular-articles{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr ;
+                gap:20px 20px ;
+                img {
+                    height: 200px;
+
+                }
+
+                figure {
+                    margin: auto;
+                    width: 90%;
+                }
+                .popular-articles-text {
+                    padding: 0 10px;
+                }
+
+            }
+        }
+        .all-article {
+            .all-articles-article{
+                display: block;
+                figure {
+                    width:90%;
+                    margin: auto;
+                }
+                img {
+                    height: 250px;
+                }
+                .all-articles-text {
+                    padding: 0 20px;
+                    margin: 0;
+
+                }
+            }
+        }
+      
+    }
+    footer {
+        width: 100%;
+        .footer-about{
+            flex-direction: column;
+
+            .btn-footer-about{
+                margin-left:170px;
+                margin-top: 20px;
+            }
+        }
+        .footer-information {
+            grid-template-columns: 1fr;
+
+        }
+    }
+}
+
+/****SMALL MOVIL****/
+
+@media(max-width:470px){
+    header {
+        .header-top{
+            position: fixed;
+            z-index: 5;
+
+            ul{
+                z-index: 5;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                display: block;
+                width: 100%;
+                background-color: $primary-color;
+                display: none;
+
+            }
+            a{
+                margin: 0;
+                color: $white;
+                display: block;
+                padding: 10px;
+                font-size: 1.3rem;
+                text-align: center;
+                border-bottom: 0.5px solid $white;
+            }
+            .burgerMenu{
+                display:inline-block;
+                font-size: 1.5rem;
+            }
+        }
+        .header-banner{
+            margin-top: 90px;
+            p{
+                font-size: 1rem;
+            }
+
+        }
+  
+    }
+   
+  
+    footer {
+        width: 100%;
+        .footer-about{
+            flex-direction: column;
+            .footer-about-text{
+                width: 80%;
+            }
+
+            .btn-footer-about{
+                margin-left:170px;
+                margin-top: 20px;
+            }
+        }
+        .footer-information {
+            grid-template-columns: 1fr;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
